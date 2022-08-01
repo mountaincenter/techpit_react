@@ -25,13 +25,13 @@ export const skillReducer = (
     case actionTypes.fetch: {
       return {
         ...state,
-        requestStete: requestStates.loading
+        requestState: requestStates.loading
       }
     }
     case actionTypes.success: {
       return {
         languageList: action.payload.languageList,
-        requestStete: requestStates.success
+        requestState: requestStates.success
       }
     }
     case actionTypes.error: {
